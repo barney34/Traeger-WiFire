@@ -86,7 +86,6 @@ class TraegerBluetoothProbeSensor(TraegerBaseEntity, SensorEntity):
         if acc and "btprobe" in acc:
             return acc["btprobe"].get("get_temp")
         return None
-        
     @property
     def extra_state_attributes(self):
         """Return battery and target temps."""
